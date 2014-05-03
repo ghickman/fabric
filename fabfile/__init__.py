@@ -33,7 +33,7 @@ def upload():
     Build, register and upload to PyPI
     """
     with msg("Uploading to PyPI"):
-        local('python setup.py sdist register upload')
+        local('python setup.py sdist bdist_wheel register upload')
 
 
 @task
